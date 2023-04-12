@@ -4,8 +4,8 @@ public class Professor extends Member {
     private String department;
     private List<String> Students; 
 
-    public Professor(String name, String address, Date dob, String email, String ssn, int memberID, String department, List<String> Students){
-        super(name, address, dob, email, ssn, int memberID);
+    public Professor(String name, String address, Date dob, String email, String ssn, int memberID, String department, double fines, List<String> Students){
+        super(name, address, dob, email, ssn, int memberID, double fines);
         this.department = department;
 //         dont know if this is the best way to set up the student list 
 //         this.students = students 
