@@ -1,13 +1,14 @@
 import java.sql.Date;
 
 public class Professor extends Member {
-    private String department; 
-    private String school;
+    private String department;
+    private List<String> Students; 
 
-    public Professor(String name, String address, Date dob, String email, String ssn, int memberID, String department, String school){
+    public Professor(String name, String address, Date dob, String email, String ssn, int memberID, String department, List<String> Students){
         super(name, address, dob, email, ssn, int memberID);
         this.department = department;
-        this.school = school;
+//         dont know if this is the best way to set up the student list 
+//         this.students = students 
     }
     
     public int getDepartment(){
@@ -15,11 +16,5 @@ public class Professor extends Member {
     }
     public void setDepartment(String department){
         this.department = department;
-    }
-    public String getSchool(){
-        return school;
-    }
-    public void setSchool(String school){
-        this.school = school;
     }
 }
