@@ -5,7 +5,7 @@ public class Professor extends Member {
     private List<String> Students; 
 
     public Professor(String name, String address, Date dob, String email, String ssn, int memberID, String department, double fines, List<String> Students){
-        super(name, address, dob, email, ssn, int memberID, double fines);
+        super(name, address, dob, email, ssn, memberID, fines);
         this.department = department;
 //         dont know if this is the best way to set up the student list 
 //         this.students = students 
