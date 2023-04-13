@@ -1,28 +1,33 @@
-import java.sql.Date;
+import java.util.ArrayList;
 
 public class Librarian extends Employee {
-    private string jobTitle;
-    private string LibraryName;
+    private ArrayList<Member> members;
 
-
-    
-    public Employee(String name, String address, Date dob, String email, String ssn, int employeeID, String department, String jobTitle, String LibraryName) {
-        super(name, address, dob, email, ssn, employeeID, department);
-        this.jobTitle = jobTitle;
-        this.LibraryName = LibraryName;
+    public Librarian(String name, String address, String dob, String email, String ssn, String empid, double fines, String department, String jobTitle) {
+        super();
+        this.members = new ArrayList<Member>();
     }
 
-    // Getters and setters for Librarian-specific variables such as job title and library location
-    public String getJobTitle(){
-        return jobTitle;
+    public ArrayList<Member> getMembers() {
+        return members;
     }
-    public void setJobTitle(String jobTitle){
-        this.jobTitle = jobTitle;
+
+    public void setMembers(ArrayList<Member> members) {
+        this.members = members;
     }
-    public string getLibraryName(){
-        return LibraryName;
+
+    public void addMember(Member member) {
+        members.add(member);
     }
-    public void setLibraryName(String LibraryName);{
-        this.LibraryName = LibraryName;
+
+    public void removeMember(Member member) {
+        members.remove(member);
+    }
+
+    public void displayMembers() {
+        System.out.println("Library Members:");
+        for (Member member : members) {
+            System.out.println(" - " + member.getName());
+        }
     }
 }

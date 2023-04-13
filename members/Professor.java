@@ -1,20 +1,26 @@
-import java.sql.Date;
+import java.util.ArrayList;
 
 public class Professor extends Member {
-    private String department;
-    private List<String> Students; 
+    private ArrayList<String> students;
 
-    public Professor(String name, String address, Date dob, String email, String ssn, int memberID, String department, double fines, List<String> Students){
-        super(name, address, dob, email, ssn, memberID, fines);
-        this.department = department;
-//         dont know if this is the best way to set up the student list 
-//         this.students = students 
+    public Professor(Person p) {
+        super(p);
+        this.students = new ArrayList<String>();
     }
-    
-    public int getDepartment(){
-        return department;
+
+    public ArrayList<String> getStudents() {
+        return students;
     }
-    public void setDepartment(String department){
-        this.department = department;
+
+    public void setStudents(ArrayList<String> students) {
+        this.students = students;
+    }
+
+    public void addStudent(String studentName) {
+        students.add(studentName);
+    }
+
+    public void removeStudent(String studentName) {
+        students.remove(studentName);
     }
 }

@@ -1,4 +1,3 @@
-import java.sql.Date;
 
 public class Books{
     private String title;
@@ -10,7 +9,7 @@ public class Books{
     // for reviews it should be 1-5 stars  
     private double reviews;
 
-    public Book(String title, String author, String publisher, int bookNum, String genre, double price, double reviews){
+    public void Book(String title, String author, String publisher, int bookNum, String genre, double price, double reviews){
         this.title = title;
         this.author = author;
         this.publisher=publisher;
@@ -38,7 +37,7 @@ public class Books{
     public void SetPublisher(String publisher){
         this.publisher = publisher;
     }
-    public String getBookNum(){
+    public int getBookNum(){
         return this.bookNum;
     }
     public void setBookNum(int bookNum){

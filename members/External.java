@@ -1,9 +1,11 @@
-import java.sql.Date;
 
 public class External extends Member {
+   
 
-    public External(String name, String address, Date dob, String email, String ssn, int memberID, double fines){
-        super(name, address, dob, email, ssn, memberID, fines);
+    public External(Person p) {
+        super(p);
+        
     }
+
     
 }

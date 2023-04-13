@@ -1,12 +1,10 @@
-import java.sql.Date;
 
 public class Technician extends Employee {
     
-    public Employee(String name, String address, Date dob, String email, String ssn, int employeeID, String department) {
-        super(name, address, dob, email, ssn, employeeID, department);
 
+    public Technician(String name, String address, String dob, String email, String ssn, String empid, double fines, String department, String jobTitle) {
+        super();
+        
     }
-
-    // Getters and setters for Technician-specific variables
 
 }

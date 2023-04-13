@@ -1,20 +1,22 @@
-import java.sql.Date;
+import java.util.ArrayList;
 
 public class Student extends Member {
-    
-    private String Professor;
+    private ArrayList<String> courses;
 
-    // could also include GPA to determine if they get a discount, maybe add their year to but Idk how we would make that important 
-    public Student(String name, String address, Date dob, String email, String ssn, int memberID, double fines, String Professor){
-        super(name, address, dob, email, ssn, memberID, fines);
-        this.Professor = Professor;
+    public Student(Person p) {
+        super(p);
+        courses = new ArrayList<String>();
     }
-    
 
-    public String getProfessor(){
-        return Professor;
+    public void addCourse(String course) {
+        courses.add(course);
     }
-    public void setProfessor(String Professor){
-        this.Professor = Professor;
+
+    public void removeCourse(String course) {
+        courses.remove(course);
+    }
+
+    public ArrayList<String> getCourses() {
+        return courses;
     }
 }
