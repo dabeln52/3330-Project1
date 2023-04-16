@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author Karch
+ *
+ */
+module NewClassProject {
+}

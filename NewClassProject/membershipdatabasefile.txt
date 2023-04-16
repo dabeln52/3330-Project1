@@ -1,0 +1,6 @@
+Name: karch
+Address: 3244
+DOB: july
+Email: soemthing@gmail.com
+SSN: 555-555-8555
+Memtype: Student
