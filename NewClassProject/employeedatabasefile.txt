@@ -1,0 +1,7 @@
+Employee ID: 5
+Name: asd
+Address: ads
+DOB: asd
+Email: asd
+SSN: asd
+Job Title: technician

@@ -1,0 +1,7 @@
+Title: joh
+ID: 5
+Section: fiction
+Publication Date: july 20th
+Author: jerry
+Publisher: jim
+ISBN: 123

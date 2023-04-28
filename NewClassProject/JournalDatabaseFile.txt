@@ -1,0 +1,7 @@
+Title: Journal Info
+ID: 1
+Section: Fantasy
+Publication Date: july
+Volume: 2
+Issue: 3
+Editor: Jerry
