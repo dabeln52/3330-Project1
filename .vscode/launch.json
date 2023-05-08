@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/derekabeln/Desktop/3330-Project1/NewClassProject/src/UI",
+      "program": "/Users/derekabeln/Desktop/3330-Project1/NewClassProject/src/UI/build/Debug/outDebug"
+    }
+  ]
+}
