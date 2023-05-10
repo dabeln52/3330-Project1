@@ -1,0 +1,7 @@
+Title: a
+ID: 6
+Section: a
+Publication Date: a
+Author: a
+Publisher: a
+ISBN: 123

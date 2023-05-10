@@ -1,0 +1,7 @@
+ID: 5
+Name: a
+Address: a
+DOB: a
+Email: a
+SSN: a
+Memtype: a
